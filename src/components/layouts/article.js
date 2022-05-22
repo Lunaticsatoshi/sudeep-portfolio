@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import Head from 'next/head'
+import { Container } from '@chakra-ui/react'
 import { GridItemStyle } from '../grid-item'
 
 const variants = {
@@ -27,7 +28,8 @@ const Layout = ({ children, title }) => {
             <meta property="og:title" content={t} />
           </Head>
         )}
-        {children}
+
+        <Container  maxW="container.lg" marginTop={10}>{children}</Container>
 
         <GridItemStyle />
       </>

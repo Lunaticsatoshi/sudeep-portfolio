@@ -1,7 +1,6 @@
 import NextLink from 'next/link'
 import {
   Link,
-  Container,
   Heading,
   Box,
   SimpleGrid,
@@ -27,7 +26,6 @@ const ProfileImage = chakra(Image, {
 
 const Home = () => (
   <Layout>
-    <Container maxW="container.lg">
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
@@ -209,7 +207,6 @@ const Home = () => (
           </NextLink>
         </Box>
       </Section>
-    </Container>
   </Layout>
 )
 
