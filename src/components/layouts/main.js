@@ -1,41 +1,41 @@
 import Head from 'next/head'
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
-import VoxelDogLoader from '../voxel-dog-loader'
+// import VoxelDogLoader from '../voxel-dog-loader'
 
-const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
-  ssr: false,
-  loading: () => <VoxelDogLoader />
-})
+// const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
+//   ssr: false,
+//   loading: () => <VoxelDogLoader />
+// })
 
 const Main = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Takuya's homepage" />
-        <meta name="author" content="Takuya Matsuyama" />
-        <meta name="author" content="craftzdog" />
+        <meta name="description" content="Sudeep's homepage" />
+        <meta name="author" content="Sudeep Deysarker" />
+        <meta name="author" content="lunaticsatoshi" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <meta name="twitter:title" content="Takuya Matsuyama" />
+        <meta name="twitter:title" content="Sudeep Deysarker" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@craftzdog" />
-        <meta name="twitter:creator" content="@craftzdog" />
-        <meta name="twitter:image" content="https://www.craftz.dog/card.png" />
-        <meta property="og:site_name" content="Takuya Matsuyama" />
-        <meta name="og:title" content="Takuya Matsuyama" />
+        <meta name="twitter:site" content="@lunaticsatoshi" />
+        <meta name="twitter:creator" content="@lunaticsatoshi" />
+        <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/47326452?v=4" />
+        <meta property="og:site_name" content="Sudeep Deysarker" />
+        <meta name="og:title" content="Sudeep Deysarker" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.craftz.dog/card.png" />
-        <title>Takuya Matsuyama - Homepage</title>
+        <meta property="og:image" content="https://avatars.githubusercontent.com/u/47326452?v=4" />
+        <title>Sudeep Deysarker - Homepage</title>
       </Head>
 
       <NavBar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
-        <LazyVoxelDog />
+        {/* <LazyVoxelDog /> */}
 
         {children}
 
