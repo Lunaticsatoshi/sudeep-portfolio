@@ -27,7 +27,7 @@ const ProfileImage = chakra(Image, {
 
 const Home = () => (
   <Layout>
-    <Container>
+    <Container maxW="container.lg">
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
